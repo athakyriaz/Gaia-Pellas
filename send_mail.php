@@ -16,7 +16,11 @@ if($lastname=="") $error=true;
 if($email=="") $error=true;
 if($message=="") $error=true;
 
-if(!$error) { $_SESSION['mail_send']=true; mail('mastnr@gmail.com','Μήνυμα απο χρήστη του GaiaPellas.gr',$message,"From:".$email); }
+if(!$error) 
+{
+	$_SESSION['mail_send']=true; mail('mastnr@gmail.com',$lastname.' '.$name.' Ξ±Ο€Ο GaiaPellas.gr',$message,"From:".$email); 
+	$_SESSION['mail_send']=true; mail('info@gaiapellas.gr',$lastname.' '.$name.' Ξ±Ο€Ο GaiaPellas.gr',$message,"From:".$email); 
+}
 else { $_SESSION['mail_send']=false; $_SESSION['sender_name']=$name; $_SESSION['sender_lastname']=$lastname; $_SESSION['sender_email']=$email; $_SESSION['sender_message']=$message; }
 
 header("Location:contact.php#Form");

@@ -36,7 +36,7 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
 			<form action="" method="get"><input type="image" src="united_kingdom.ico" width="20px"><input type="hidden" name="language" value="english"><input type="hidden" name="page" value="index.html"></form>
 			<form action="" method="get"><input type="image" src="germany.ico" width="20px"><input type="hidden" name="language" value="german"><input type="hidden" name="page" value="index.html"></form>
 		</div> -->
-		<div style="float:center;margin-right:130px;"><center><img src='images/welcome_gaia.png' height='85px'/></center></div>
+		<div style="float:center;margin-right:65px;"><center><img src='images/welcome_gaia.png' height='85px'/></center></div>
         <div class="cleaner"></div>
     </div> <!-- end of header -->
     

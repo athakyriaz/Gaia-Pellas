@@ -1,0 +1,9 @@
+#flags
+{
+	float:left;
+	margin-left:20px;
+}
+#flags form
+{
+	display:inline;
+}

@@ -8,6 +8,8 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 
+<script type="text/javascript" language="javascript" src="pop_up/lytebox.js"></script>
+<link rel="stylesheet" href="pop_up/lytebox.css" type="text/css" media="screen" />
 <script language="javascript" type="text/javascript">
 function clearText(field)
 {
@@ -42,7 +44,7 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
     
     <div id="template_menu" class="ddsmoothmenu">
         <ul>
-            <li><a href="index.html" class="selected">Αρχική</a></li>
+            <li><a href="index.html" >Αρχική</a></li>
             <li><a href="">Εταιρία</a>
 				 <ul>
                     <li><a href="company.html">Ιστορικό</a></li>
@@ -58,10 +60,10 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
                 </ul>
           	</li>
 			<li><a href="sales.html">Που θα μας Βρείτε</a></li>
-			<li><a href="#">Media</a>
+			<li><a href="#" >Media</a>
                 <ul>
                     <li><a href="#">Video</a></li>
-                    <li><a href="gallery.html">Φωτογραφίες</a></li>
+                    <li><a href="gallery.html" class="selected">Φωτογραφίες</a></li>
                 	<span></span>
                 </ul>
           	</li>
@@ -73,7 +75,7 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
     <div id="template_slider_wrapper">
         
         <div id="slider" class="nivoSlider">
-            <a href="#"><img src="images/slider/01.jpg" alt="Slider 01" title="Φασολάκια Πλατιά" /></a>
+             <a href="#"><img src="images/slider/01.jpg" alt="Slider 01" title="Φασολάκια Πλατιά" /></a>
             <a href="#"><img src="images/slider/02.jpg" alt="Slider 02" title="Φασολάκι Στρογγυλό" /></a>
             <a href="#"><img src="images/slider/03.jpg" alt="Slider 03" title="Φασολάκι Πλατύ" /></a>
             <a href="#"><img src="images/slider/04.jpg" alt="Slider 04" title="Σπανάκι" /></a>
@@ -90,57 +92,18 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
     
     <div id="template_main">       
         
-        <div class="col_2 float_l">
-        	<center><h2>Καλώς Ήλθατε στη Γαία Πέλλας</h2></center>
-			<img src="images/welcome_gaia.png" alt="Image 05" class="image_frame_430" />
-            <br class="cleaner h20" />
-            <p>Η ΓΑΙΑ ΠΕΛΛΑΣ είναι μια από τις πρώτες εταιρίες στην καλλιέργεια και παραγωγή κατεψυγμένων λαχανικών στην Ελλάδα. Είναι η πρώτη που ξεκίνησε τη Διαχείριση Ολοκληρωμένης Καλλιέργειας λαχανικών και έχει πιστοποιηθεί με το AGRO.</p>
-            <a href="company.html" class="more">Περισσότερα</a>
-            <br class="cleaner" />
-        </div>
+		<div class="col_b float_c">
+        	<center><h2>Ποιότητα EN ISO 22000 : 2005</h2></center>
+			<div style="height:300px;margin:50px 50px 50px 50px;">
+					<div class="image_fl"><a href="images/quality/certificateISO.jpg" class="lytebox"><img src="images/quality/certificateISO.jpg" alt="Facilities" width="200px" height="300px" style="border-style:ridge; border-width:2px;"></a></div>
+					<div class="image_fr"><a href="images/quality/pistopoihtikoISO.jpg" class="lytebox"><img src="images/quality/pistopoihtikoISO.jpg" alt="Facilities" width="200px" height="300px" style="border-style:ridge; border-width:2px;"></a></div>
+			</div>
+			<center><h2>Ποιότητα AGRO 2-1 & 2-2</h2></center>
+			<div style="height:300px;margin:50px 50px 50px 300px;">
+					<div class="image_fl"><a href="images/quality/pistopoihtikoAGRO.jpg" class="lytebox"><img src="images/quality/pistopoihtikoAGRO.jpg" alt="Facilities" width="200px" height="300px" style="border-style:ridge; border-width:2px;"></a></div>
+			</div>			
+		</div>
         
-        <div class="col_2 float_r">
-        	<center><h2>Σειρά Προϊόντων</h2></center>
-            <img src="images/suppliers.png" alt="Image 05" class="image_frame_430" />
-            <p>Η ΓΑΙΑ ΠΕΛΛΑΣ συνεργάζεται και προμηθεύει την εταιρία Βλαστάρι καθώς επίσης και την εταιρία Λαζαρίδη </p>
-	 	    <a href="company.html" class="more">Περισσότερα</a>
-            <br class="cleaner" />
-        </div>        
-		
-		<div class="cleaner hr_divider"></div>		
-		 
-		 </br>
-		 
-		 <div class="col_4 col_l">
-        	<img src="images/products/laz_arakas.jpg" alt="Image 04" class="image_frame_215" />
-            <h3 class="fp_h3">Αρακάς</h3>
-			<p>Ο Αρακάς Λαζαρίδη περιέχει πολύ φολικό οξύ και αντιοξειδωτικές ουσίες αλλά και αρκετά μέταλλα (ασβέστιο, μαγνήσιο, φώσφορο και σίδηρο). </p>
-            <a href="lazaridi-products/lazar_arakas.html" class="more">Περισσότερα</a>
-        </div>
-		
-		 <div class="col_4">
-        	<img src="images/lazaridis_fasolakia.jpg" alt="Image 02" class="image_frame_215" />
-            <h3 class="fp_h3">Φασολάκια Στρόγγυλα</h3>
-            <p>Είναι πολύ περιεκτικά σε βιταμίνη Α, απαράιτητη για την καλή όραση και γενικότερα την υγεία και ανάπτυξη του οργανισμού.</p>
-            <a href="lazaridi-products/lazar_fasolia.html" class="more">Περισσότερα</a>
-        </div>
-		
-		<div class="col_4">
-        	<img src="images/products/laz_fas_platia.jpg" alt="Image 03" class="image_frame_215" />
-            <h3 class="fp_h3">Φασολάκια Πλατιά</h3>
-			<p>Τα πλατιά Φασολάκια Λαζαρίδη είναι Πλούσια σε θρεπτικά συστατικά (υδατάνθρακες, πρωτεϊνες), απαραίτητο για τη σωστή ανάπτυξη του οργανισμού.</p>
-            <a href="lazaridi-products/lazar_fasolia_platia.html" class="more">Περισσότερα</a>
-        </div>
-        		
-		 <div class="col_4">
-        	<img src="images/products/laz_spanaki.jpg" alt="Image 01" class="image_frame_215" />
-            <h3 class="fp_h3">Σπανάκι</h3>
-            <p>Περιέχει μεγάλες ποσότητες από β- καροτένια, βιταμίνες Α και C, φολικό οξύ ,σίδηρο, μαγνήσιο και ίνες. Ενισχύει την αντιοξειδωτική δράση των τροφών που συνοδεύει.</p>
-            <a href="lazaridi-products/lazar_spanaki.html" class="more">Περισσότερα</a>
-        </div>
-                
-        <br class="cleaner" />	
-		</br></br>
     </div>  
 
 <div id="footer">    

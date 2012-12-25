@@ -43,7 +43,13 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
     <div id="template_menu" class="ddsmoothmenu">
         <ul>
             <li><a href="index.html">Αρχική</a></li>
-            <li><a href="company.html" >Εταιρία</a></li>
+            <li><a href="">Εταιρία</a>
+				 <ul>
+                    <li><a href="company.html">Ιστορικό</a></li>
+                    <li><a href="quality.html">Ποιότητα</a></li>
+                	<span></span>
+                </ul>
+			</li>
             <li><a href="#">Προϊόντα</a>
                 <ul>
                     <li><a href="blastari.html">Βλαστάρι</a></li>
@@ -122,7 +128,13 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
 <div id="footer">    
 	<div id="footer_copyrights">	
     	<center>Copyright © 2012 <a href="index.html"style="color:#009900; text-decoration:none;">Γαία Πέλλας</a> | 
-		<a href="" target="_parent"> </a> Powered by <span style="font-size:10px; color:;" >Kyriazopoulos-Tsalikidis</span></center>
+		<a href="" target="_parent"> </a> Powered by <span style="font-size:10px; color:;" >Kyriazopoulos-Tsalikidis</span>
+		</br> </br>
+		<a href="http://el-gr.facebook.com/pages/%CE%93%CE%91%CE%99%CE%91-%CE%A0%CE%95%CE%9B%CE%9B%CE%91%CE%A3/493361827357523?ref=nf"  TARGET="_blank"><img src="images/facebook.png"/></a>
+		<a href="http://www.youtube.com/channel/UC4ZwVIZperLf6NLu2ochW6A"  TARGET="_blank"><img src="images/youtube.png"/></a>
+		<a href="https://plus.google.com/u/0/114543400886846930067/posts"  TARGET="_blank"><img src="images/googleplus.png"/></a>
+		<a href="mailto:info@gaiapellas.gr "><img src="images/email.png"/></a>
+		</center>
     </div>
 </div>
 </div>

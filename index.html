@@ -60,7 +60,7 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
 			<li><a href="sales.html">Που θα μας Βρείτε</a></li>
 			<li><a href="#">Media</a>
                 <ul>
-                    <li><a href="#">Video</a></li>
+                    <li><a href="video.html">Video</a></li>
                     <li><a href="gallery.html">Φωτογραφίες</a></li>
                 	<span></span>
                 </ul>
@@ -70,15 +70,19 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
         <br style="clear: left" />
     </div>
     
-    <div id="template_slider_wrapper">
-        
-        <div id="slider" class="nivoSlider">
-            <a href="#"><img src="images/slider/01.jpg" alt="Slider 01" title="Φασολάκια Πλατιά" /></a>
-            <a href="#"><img src="images/slider/02.jpg" alt="Slider 02" title="Φασολάκι Στρογγυλό" /></a>
-            <a href="#"><img src="images/slider/03.jpg" alt="Slider 03" title="Φασολάκι Πλατύ" /></a>
-            <a href="#"><img src="images/slider/04.jpg" alt="Slider 04" title="Σπανάκι" /></a>
-			<a href="#"><img src="images/slider/05.jpg" alt="Slider 04" title="Σέσκουλο" /></a>
-        </div>       
+    <div id="template_slider_wrapper">   
+	</br>
+	  <video id="video1" width="960" height="360"  autoplay="true" loop="true">
+			<source src="gaiapellas.mp4" type="video/mp4">
+	</video>
+		<script>
+			myVid=document.getElementById("video1");
+			function disableControls()
+			  { 
+			  myVid.controls=false;
+			  myVid.load();
+		  } 
+		</script> 
     </div>
     <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>

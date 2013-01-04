@@ -61,7 +61,7 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
 			<li><a href="sales.html">Που θα μας Βρείτε</a></li>
 			<li><a href="#">Media</a>
                 <ul>
-                    <li><a href="#">Video</a></li>
+                    <li><a href="video.html">Video</a></li>
                     <li><a href="gallery.html">Φωτογραφίες</a></li>
                 	<span></span>
                 </ul>
@@ -71,15 +71,19 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
         <br style="clear: left" />
     </div>
     
-    <div id="template_slider_wrapper">
-        
-        <div id="slider" class="nivoSlider">
-             <a href="#"><img src="images/slider/01.jpg" alt="Slider 01" title="Φασολάκια Πλατιά" /></a>
-            <a href="#"><img src="images/slider/02.jpg" alt="Slider 02" title="Φασολάκι Στρογγυλό" /></a>
-            <a href="#"><img src="images/slider/03.jpg" alt="Slider 03" title="Φασολάκι Πλατύ" /></a>
-            <a href="#"><img src="images/slider/04.jpg" alt="Slider 04" title="Σπανάκι" /></a>
-			<a href="#"><img src="images/slider/05.jpg" alt="Slider 04" title="Σέσκουλο" /></a>
-        </div>       
+    <div id="template_slider_wrapper">   
+	</br>
+	  <video id="video1" width="960" height="360"  autoplay="true" loop="true">
+			<source src="gaiapellas.mp4" type="video/mp4">
+	</video>
+		<script>
+			myVid=document.getElementById("video1");
+			function disableControls()
+			  { 
+			  myVid.controls=false;
+			  myVid.load();
+		  } 
+		</script> 
     </div>
     <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
@@ -103,15 +107,11 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
 					<p>Στόχος μας είναι να χτίζουμε μακροχρόνιες σχέσεις με τους πελάτες μας. Με αυτό τον τρόπο  γινόμαστε αληθινοί συνεργάτες με κοινό ενδιαφέρον ο ένας για την επιτυχία του άλλου. </p>
 				<div style="height:200px;margin:50px 50px 50px 50px;">
 					<div class="image_fl"><a href="images/facilities/facilities1.jpg" class="lytebox"><img src="images/facilities/facilities1.jpg" alt="Facilities" width="300px" height="200px"></a></div>
-					<div class="image_fr"><a href="images/facilities/facilities2.jpg" class="lytebox"><img src="images/facilities/facilities2.jpg" alt="Facilities" width="300px" height="200px"></a></div>
+					<div class="image_fr"><a href="images/facilities/facilities4.jpg" class="lytebox"><img src="images/facilities/facilities2.jpg" alt="Facilities" width="300px" height="200px"></a></div>
 				</div>
 				<p>Η ΓΑΙΑ ΠΕΛΛΑΣ αξιοποιεί την πείρα της και την γνώση της εδώ και 12 χρόνια στην εγχώριο αγορά , στέλνοντας στο τραπέζι σας ολόφρεσκα λαχανικά τα οποία έχουν υποστεί επεξεργασία 20 λεπτά αφότου κόπηκαν από το χωράφι. </p>
 				<p>Η ΓΑΙΑ ΠΕΛΛΑΣ εγγυάται ότι τα λαχανικά της παράγονται με εφαρμογή του συστήματος Διαχείρισης Ποιότητας και Ασφάλειας ποιστοποιημένο από την TUV HELLAS κατά ΕΝ ISO 9001:2008 και EN ISO 22000:2005 . </p>
 				<p>Ελληνικά προιόντα από Έλληνες παραγωγούς κατευθείαν στο πιάτο σας.</p>
-				<div style="height:200px;margin:50px 50px 50px 50px;">
-					<div class="image_fl"><a href="images/facilities/facilities3.jpg" class="lytebox"><img src="images/facilities/facilities3.jpg" alt="Facilities" width="300px" height="200px"></a></div>
-					<div class="image_fr"><a href="images/facilities/facilities4.jpg" class="lytebox"><img src="images/facilities/facilities5.jpg" alt="Facilities" width="300px" height="200px"></a></div>
-				</div>				
 		</div>		
     </div>  
 	

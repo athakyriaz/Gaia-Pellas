@@ -8,6 +8,8 @@
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="../css/nivo-slider.css" type="text/css" media="screen" />
 
+<script type="text/javascript" language="javascript" src="../pop_up/lytebox.js"></script>
+<link rel="stylesheet" href="../pop_up/lytebox.css" type="text/css" media="screen" />
 <script language="javascript" type="text/javascript">
 function clearText(field)
 {
@@ -60,7 +62,7 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
 			<li><a href="../sales.html">Που θα μας Βρείτε</a></li>
 			<li><a href="#">Media</a>
                 <ul>
-                    <li><a href="#">Video</a></li>
+                    <li><a href="../video.html">Video</a></li>
                     <li><a href="../gallery.html">Φωτογραφίες</a></li>
                 	<span></span>
                 </ul>
@@ -70,15 +72,19 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
         <br style="clear: left" />
     </div>
     
-    <div id="template_slider_wrapper">
-        
-        <div id="slider" class="nivoSlider">
-            <a href="#"><img src="../images/slider/01.jpg" alt="Slider 01" title="Φασολάκια Πλατιά" /></a>
-            <a href="#"><img src="../images/slider/02.jpg" alt="Slider 02" title="Φασολάκι Στρογγυλό" /></a>
-            <a href="#"><img src="../images/slider/03.jpg" alt="Slider 03" title="Φασολάκι Πλατύ" /></a>
-            <a href="#"><img src="../images/slider/04.jpg" alt="Slider 04" title="Σπανάκι" /></a>
-			<a href="#"><img src="../images/slider/05.jpg" alt="Slider 04" title="Σέσκουλο" /></a>
-        </div>       
+    <div id="template_slider_wrapper">   
+	</br>
+	  <video id="video1" width="960" height="360"  autoplay="true" loop="true">
+			<source src="../gaiapellas.mp4" type="video/mp4">
+	</video>
+		<script>
+			myVid=document.getElementById("video1");
+			function disableControls()
+			  { 
+			  myVid.controls=false;
+			  myVid.load();
+		  } 
+		</script> 
     </div>
     <script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
@@ -92,7 +98,9 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
         
         <div class="col_b float_c">
         	<center><h2>Φασολάκια Πλατιά</h2></center>
-			<center><img src="../images/products/blast_fas_platia_mega.jpg" alt="platia"/></center>
+			<div style="height:170px;margin:50px 50px 50px 335px;">
+					<div class="image_fl"><a href="../images/products/blast_fas_platia_400.jpg" class="lytebox"><img src="../images/products/blast_fas_platia_mega.jpg" alt="Facilities"></a></div>
+				</div>
 			</br>
             <br class="cleaner h20" />
             <p>Τα κατεψυγμένα Πλατιά Φασολάκια του Βλαστάρι είναι πλούσια σε θρεπτικά συστατικά (υδατάνθρακες, πρωτεϊνες), απαραίτητο για τη σωστή ανάπτυξη του οργανισμού.Έχουν ίνες ,καροτένια, ασβέστιο, σίδηρο και φώσφορο και πολλές βιταμίνες του συμπλέγματος Β.</p>

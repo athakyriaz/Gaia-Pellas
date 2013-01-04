@@ -62,7 +62,7 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
 			<li><a href="sales.html">Που θα μας Βρείτε</a></li>
 			<li><a href="#" >Media</a>
                 <ul>
-                    <li><a href="#">Video</a></li>
+                    <li><a href="video.html">Video</a></li>
                     <li><a href="gallery.html" class="selected">Φωτογραφίες</a></li>
                 	<span></span>
                 </ul>
@@ -70,7 +70,21 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
           	<li><a href="contact.php">Επικοινωνία</a></li>
         </ul>
         <br style="clear: left" />
-    </div>      
+    </div>   
+		<div id="template_slider_wrapper">   
+	</br>
+	  <video id="video1" width="960" height="360"  autoplay="true" loop="true">
+			<source src="gaiapellas.mp4" type="video/mp4">
+	</video>
+		<script>
+			myVid=document.getElementById("video1");
+			function disableControls()
+			  { 
+			  myVid.controls=false;
+			  myVid.load();
+		  } 
+		</script> 
+    </div>
     <div id="template_main">               
 		<div class="col_b float_c">
         	<center><h2>Καλλιέργειες</h2></center>		
@@ -82,7 +96,8 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
 			<a href="#"><img src="images/slider/05.jpg" alt="Slider 05" title="Σέσκουλο" /></a>
 			<a href="#"><img src="images/slider/06.jpg" alt="Slider 06" title="Σπανάκι" /></a>
 			<a href="#"><img src="images/slider/07.jpg" alt="Slider 07" title="Σέσκουλο" /></a>			
-        </div>       
+        </div>    
+		</br>
     </div>
     <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>

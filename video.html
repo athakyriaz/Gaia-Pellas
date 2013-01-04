@@ -28,6 +28,7 @@ function clearText(field)
 <script type="text/javascript">
 ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsmoothmenu', contentsource: "markup"})
 </script>
+  
 </head>
 <body>
 <div id="template_wrapper">
@@ -43,7 +44,7 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
     
     <div id="template_menu" class="ddsmoothmenu">
         <ul>
-            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="index.html" >Αρχική</a></li>
             <li><a href="">Εταιρία</a>
 				 <ul>
                     <li><a href="company.html">Ιστορικό</a></li>
@@ -58,10 +59,10 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
                 	<span></span>
                 </ul>
           	</li>
-			<li><a href="sales.html" class="selected">Που θα μας Βρείτε</a></li>
-			<li><a href="#">Media</a>
+			<li><a href="sales.html">Που θα μας Βρείτε</a></li>
+			<li><a href="#" >Media</a>
                 <ul>
-                    <li><a href="video.html">Video</a></li>
+                    <li><a href="video.html" class="selected">Video</a></li>
                     <li><a href="gallery.html">Φωτογραφίες</a></li>
                 	<span></span>
                 </ul>
@@ -70,20 +71,19 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
         </ul>
         <br style="clear: left" />
     </div>
-    
-    <div id="template_slider_wrapper">   
-	</br>
-	  <video id="video1" width="960" height="360"  autoplay="true" loop="true">
-			<source src="gaiapellas.mp4" type="video/mp4">
-	</video>
-		<script>
-			myVid=document.getElementById("video1");
-			function disableControls()
-			  { 
-			  myVid.controls=false;
-			  myVid.load();
-		  } 
-		</script> 
+    <div id="template_slider_wrapper">
+        </br>
+<video id="video1" width="960" height="360"  autoplay="true" loop="true">
+  <source src="gaiapellas.mp4" type="video/mp4">
+</video>
+<script>
+myVid=document.getElementById("video1");
+function disableControls()
+  { 
+  myVid.controls=false;
+  myVid.load();
+  } 
+</script> 
     </div>
     <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
@@ -93,52 +93,27 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
     });
     </script>
     
-    <div id="template_main">      .
-	
-        <div class="col_b float_c">
-        	<center><h2>Που θα μας Βρείτε</h2></center>
-			<center><img src="images/welcome_gaia.png" alt="Gaia-Pellas" width="250px"/></center>
+    <div id="template_main">       
+        
+		<div class="col_b float_c">
+			<center><h2>Τηλεοπτικό Σποτ Λαζαρίδη</h2></center>
+			<center><iframe title="Γαία Πέλλας. -Τηλεοπτικό Σποτ" 
+			width="500px" height="330" src="http://www.youtube.com/embed/wAA9hqnynJE"
+			frameborder="0" allowFullScreen></iframe></center>
 			</br>
-            <br class="cleaner h20" />
-				    <p>Η έδρα της ΓΑΙΑ ΠΕΛΛΑΣ Ε.Π.Ε. βρίσκεται στο 1ο χιλιόμετρο Γιαννιτσών - Εδέσσης σε ιδιόκτητες εγκαταστάσεις. </p>					
-				
-		<div class="section_w940" style="margin-top:50px;">                                                                                                                                                                             
-			<center><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=203905181465547181133.0004d18cc8222d242355c&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=40.78665,22.400608&amp;spn=0.022745,0.036478&amp;z=14&amp;output=embed"></iframe><br /><small>Προβολή <a href="https://maps.google.com/maps/ms?msid=203905181465547181133.0004d18cc8222d242355c&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=40.78665,22.400608&amp;spn=0.022745,0.036478&amp;z=14&amp;source=embed" style="color:#0000FF;text-align:left">Γαία Πέλλας</a> σε χάρτη μεγαλύτερου μεγέθους</small></center>	
+        	<center><h2>Επεξεργασία του Αρακά</h2></center>
+			<center><iframe title="Γαία Πέλλας. - Επεξεργασία του Αρακά" 
+			width="500px" height="330" src="http://www.youtube.com/embed/nL0KoB5aG74"
+			frameborder="0" allowFullScreen></iframe></center>
+			</br>			
+			<center><h2>Συσκευασία Καταψυγμένων Λαχανικών</h2></center>
+			<center><iframe title="Γαία Πέλλας. - Συσκευασία Λαχανικών" 
+			width="500px" height="330" src="http://www.youtube.com/embed/Nff0WE4ht_8"
+			frameborder="0" allowFullScreen></iframe></center>
+			</br>
 		</div>
-				</br></br>
-				<p>Που θα βρείτε τα προϊόντα μας:</p>
-				<ul>
-					<li><b>ΜΑΣΟΥΤΗΣ</b></li>
-					<li><b>ΑΡΒΑΝΙΤΙΔΗΣ</b></li>
-					<li><b>FAMILY</b></li>
-					<li><b>DEAL</b></li>
-					<li><b>MyMarket</b></li>
-					<li><b>Σκλαβενίτης</b></b> <i>- Αθήνα</i></li>
-					<li><b>Extra Πρώτα και Φθηνά</b> <i>- Αθήνα</i></li>
-					<li><b>Γέγος</b> <i>- Αθήνα</i></li>
-					<li><b>Ελληνική Διατροφή</b> <i>- Αθήνα</i></li>
-					<li><b>ΑΝΕΔΗΚ ΚΡΗΤΙΚΟΣ</b> <i>- Αθήνα</i></li>
-					<li><b>Αφροδίτη</b> <i>- Θεσσαλονίκη</i></li>
-					<li><b>Συνεργαζόμενοι παντοπώλες</b> <i>- Θεσσαλονίκη</i></li>
-					<li><b>Καραγιάννης</b> <i>- Γύθειο</i></li>
-					<li><b>Τρόφιμα Ηλίας Δούκας</b></li>
-					<li><b>ΜΕΡΙΜΝΑ</b> <i>- Συνεταιρισμός παντοπωλών</i></li>
-					<li><b>ΚΡΟΝΟΣ ΚΑΡΑΚΙΤΣΟΣ</b> <i>- Πάτρα</i></li>
-					<li><b>ΑΝΔΡΙΚΟΠΟΥΛΟΣ</b> <i>- Πάτρα</i></li>
-					<li><b>ΣΠΑΚ </b><i>- Αθήνα & Κόρινθο</i></li>
-					<li><b>ΕΛΑ-ΠΟΥΛΟΣ ΑΝΔΡΕΑΣ</b> <i>- Κόρινθο</i></li>
-					<li><b>ΕΛΑ-ΠΟΥΛΟΣ ΜΑΡΙΝΟΣ-ΚΩΣΤΑΝΤΙΝΟΣ</b> <i>- Κόρινθο</i></li>
-					<li><b>ΒΗΤΑ-ΠΙ </b><i>- Θεσσαλονίκη, Γιαννιτσά, Καστοριά</i></li>
-					<li><b>ΣΥΜΕΩΝΙΔΗΣ</b> <i>- Κιλκίς</i></li>
-					<li><b>ΠΑΥΛΟΥ</b> <i>- Καστοριά</i></li>
-					<li><b>"Σούπερ Μάρκετ" ΛΑΡΙΣΑ</b> <i>- Λάρισα</i></li>
-					<li><b>ΣΚΟΥΡΑΣ ΤΡΙΑΝΤΑΦΥΛΛΟΣ</b> <i>- Σκιάθος & Λέρος</i></li>
-					<li><b>Όμιλος Επιχειρήσεων Σπανός</b> <i>- Ρόδος</i></li>
-				</ul>
-		</div>
-		
+        
     </div>  
-	
 
 <div id="footer">    
 	<div id="footer_copyrights">	

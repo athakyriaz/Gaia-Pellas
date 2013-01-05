@@ -121,6 +121,8 @@ ddsmoothmenu.init({mainmenuid: "template_menu",orientation: 'h',classname: 'ddsm
 			<p><img src="images/contact/phone.png" alt="phone" height="16px" align="top"> <b>Τηλέφωνο:</b> 23820-83534</p>
 			<p><img src="images/contact/fax.png" alt="fax" height="16px" align="top"> <b>FAX:</b> 23820-83574</p>
 			<p><img src="images/contact/mail.png" alt="e-mail" height="16px" align="top"> <b>E-mail:</b> info@gaiapellas.gr</p>
+			</br></br>
+			<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=203905181465547181133.0004d18cc8222d242355c&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=40.78665,22.400608&amp;spn=0.022745,0.036478&amp;z=14&amp;output=embed"></iframe><br /><small>Προβολή <a href="https://maps.google.com/maps/ms?msid=203905181465547181133.0004d18cc8222d242355c&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=40.78665,22.400608&amp;spn=0.022745,0.036478&amp;z=14&amp;source=embed" style="color:#0000FF;text-align:left">Γαία Πέλλας</a> σε χάρτη μεγαλύτερου μεγέθους</small>
 			</div>
 			<div class="cleaner"></div>
         </div>	
